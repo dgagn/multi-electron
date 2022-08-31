@@ -31,7 +31,7 @@ function useTimer() {
 function Timer({ className = '' }) {
   const time = useTimer();
 
-  return <div className={className}>{time}</div>;
+  return <h2 className={className}>{time}</h2>;
 }
 
 export default Timer;
