@@ -1,7 +1,9 @@
+import Time from './time';
+
 function App() {
   return (
-    <div>
-      <h1>Hello world</h1>
+    <div className="dark">
+      <Time />
     </div>
   );
 }
