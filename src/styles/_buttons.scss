@@ -1,0 +1,21 @@
+@layer components {
+  .full-ring {
+    @apply focus:outline-0 focus:ring-2 focus:ring-primary-500/60 focus:ring-offset-1 focus-visible:ring-2 transition-colors focus-visible:ring-offset-2 focus-visible:ring-primary-500/60;
+  }
+
+  .btn {
+    @apply relative inline-flex cursor-pointer items-center justify-center whitespace-nowrap rounded-2xl shadow-sm py-xs px-md text-base decoration-0 transition focus:outline-0 focus:ring-2 focus:ring-primary-500/60 focus:ring-offset-1 active:translate-y-[2px] focus-visible:ring-2 transition-colors focus-visible:ring-offset-2 ease-in-out font-medium border border-contrast-300;
+  }
+
+  .btn--error {
+    @apply bg-error-600 text-error-50 hover:bg-error-500 dark:bg-error-400/70 dark:text-error-900 dark:hover:bg-error-400 focus-visible:ring-error-500;
+  }
+
+  .btn--contrast {
+    @apply bg-contrast-900 text-contrast-50 hover:bg-contrast-800 focus-visible:ring-contrast-900 dark:focus-visible:ring-primary-900 disabled:bg-contrast-900 disabled:cursor-not-allowed disabled:translate-y-0;
+  }
+
+  .btn--primary {
+    @apply bg-primary-700 text-contrast-50 dark:bg-primary-100 dark:text-contrast-900 hover:bg-primary-600 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-500 disabled:bg-primary-500 disabled:cursor-not-allowed disabled:translate-y-0;
+  }
+}

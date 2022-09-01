@@ -1,0 +1,21 @@
+@layer base {
+  input[type='text'],
+  input[type='email'],
+  input[type='url'],
+  input[type='password'],
+  input[type='number'],
+  input[type='date'],
+  input[type='datetime-local'],
+  input[type='month'],
+  input[type='search'],
+  input[type='tel'],
+  input[type='time'],
+  input[type='week'],
+  textarea {
+    @apply w-full rounded-md bg-contrast-50 dark:bg-contrast-100/40 py-xs px-sm text-contrast-600 ring-1 ring-contrast-200 transition placeholder:text-contrast-400 focus:ring-2 focus:ring-primary-500/60 focus-within:focus:bg-bg focus-within:focus:outline-0;
+  }
+
+  label {
+    @apply block text-sm text-contrast-700 mb-2xs;
+  }
+}

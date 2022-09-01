@@ -1,7 +1,10 @@
+import Time from './time';
+import { useEffect } from 'react';
+
 function App() {
   return (
-    <div>
-      <h1>Hello world</h1>
+    <div className="">
+      <Time className="h2" />
     </div>
   );
 }

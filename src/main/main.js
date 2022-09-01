@@ -1,10 +1,10 @@
-const {app, BrowserWindow} = require('electron');
+const { app, BrowserWindow } = require('electron');
 
 function createWindow() {
   const win = new BrowserWindow({
     width: 800,
     height: 600,
-    backgroundColor: '#282c34',
+    backgroundColor: '#18181b',
     center: true,
   });
   win.loadURL('http://localhost:3000');
