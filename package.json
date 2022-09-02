@@ -33,7 +33,29 @@
   "devDependencies": {
     "concurrently": "^7.3.0",
     "electron": "^20.1.0",
+    "electron-builder": "^23.3.3",
     "nodemon": "^2.0.19",
     "wait-on": "^6.0.1"
+  },
+  "build": {
+    "appId": "cstjean.multiplateforme.mirror",
+    "copyright": "Copyright © 2022 Bilodeau-Gagnon-Tram",
+    "files": [
+      "build/**/*",
+      "node_modules/**/*"
+    ],
+    "directories": {
+      "buildResources": "public"
+    },
+    "mac": {
+      "category": "public.app-category.utilities",
+      "target": "dmg"
+    },
+    "win": {
+      "target": "zip"
+    },
+    "linux": {
+      "category": "Utility"
+    }
   }
 }
